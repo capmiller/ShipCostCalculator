@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         Scanner in = new Scanner(System.in);
         double itemPrice = 0;
         final double FREE_SHIP = 100;
@@ -12,11 +14,13 @@ public class Main {
 
 
         System.out.print("Enter the item price: ");
-        if (in.hasNextDouble()) {
+        if (in.hasNextDouble())
+        {
             itemPrice = in.nextDouble();
             in.nextLine(); // clear buffer
 
-            if (itemPrice >= FREE_SHIP) {
+            if (itemPrice >= FREE_SHIP)
+            {
                 shipCost = 0;
                 totalCost = itemPrice;
             } else // have to pay ship costs
@@ -28,14 +32,14 @@ public class Main {
             System.out.println("Shipping costs are: " + shipCost);
             System.out.println("Total costs are: " + totalCost);
             {
-                
+
                     trash = in.nextLine();
                     System.out.println(trash + "is not a valid number");
                     System.out.println("RUN THE PROGRAM AGAIN!");
                 }
 
 
-            }
+
         }
     }
 }
