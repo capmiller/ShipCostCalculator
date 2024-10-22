@@ -34,7 +34,7 @@ public class Main
             {
 
                     trash = in.nextLine();
-                    System.out.println(trash + "is not a valid number");
+                    System.out.println("Please enter the item price, not " +trash + "." + trash + "is not a valid number");
                     System.out.println("RUN THE PROGRAM AGAIN!");
                 }
 
